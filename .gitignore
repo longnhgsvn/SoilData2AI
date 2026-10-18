@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Dữ liệu thật / đầu ra lớn (không đưa lên GitHub)
+dataXLSX/
+dataCSV/
+dataCSV_UTF8/
+*.7z
+AllData.csv
+_log_*.txt
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PyInstaller tạm
+*.manifest
+*.spec.bak
+
+examples/_ci_out/
+examples/out/
+examples/*_out/

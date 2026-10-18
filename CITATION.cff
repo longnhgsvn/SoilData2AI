@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Nếu sử dụng mã nguồn này, vui lòng trích dẫn bài báo ERSD 2026."
+title: "SoilData2AI: Python pipeline for soil physical-mechanical property data preparation"
+version: 2.0.0
+year: 2026
+license: MIT
+abstract: >-
+  Quy trình Python tự động quét bảng tính .xls/.xlsx, tách sheet, chuyển văn bản
+  TCVN3 sang Unicode và xuất CSV UTF-8 phục vụ chuẩn bị dữ liệu huấn luyện AI.
+  Kèm GUI Qt6, bộ kiểm thử và slide báo cáo ERSD 2026.
+keywords:
+  - Python
+  - TCVN3
+  - Unicode
+  - CSV
+  - geotechnical engineering
+  - soil mechanics
+  - data normalization
+  - machine learning
+authors:
+  - family-names: "Ngô"
+    given-names: "Thị Phương Thảo"
+  - family-names: "Ngô"
+    given-names: "Hùng Long"
+  - family-names: "Nguyễn"
+    given-names: "Thị Hải Yến"
+references:
+  - type: conference-paper
+    title: "Sử dụng Python xử lý dữ liệu chỉ tiêu cơ lý đất để chuẩn bị dữ liệu huấn luyện AI"
+    authors:
+      - family-names: "Ngô"
+        given-names: "Thị Phương Thảo"
+      - family-names: "Ngô"
+        given-names: "Hùng Long"
+      - family-names: "Nguyễn"
+        given-names: "Thị Hải Yến"
+    collection-title: "Hội nghị khoa học ERSD 2026"
+    year: 2026
+
