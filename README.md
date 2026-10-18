@@ -82,6 +82,8 @@ python src/gui.py
 
 GUI hỗ trợ chọn/kéo–thả thư mục, chạy nền, thanh tiến trình, log màu, bảng kết quả từng tệp, ghi log và tùy chọn gộp `AllData.csv`.
 
+![GUI SoilData2AI](docs/images/gui.png)
+
 ### Kiểm thử
 
 ```bash
