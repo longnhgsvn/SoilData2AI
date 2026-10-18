@@ -47,7 +47,15 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-import xlsx2csv as core
+try:
+    import xlsx2csv as core
+except ModuleNotFoundError:  # chạy bằng: python -m src.gui
+    from . import xlsx2csv as core
+
+try:
+    import normalize
+except ModuleNotFoundError:  # chạy bằng: python -m src.gui
+    from . import normalize
 
 APP_NAME = "SoilData2AI"
 APP_VERSION = "2.0"
@@ -208,8 +216,6 @@ class ConvertWorker(QThread):
             if self.merge_alldata and stats["ok"] and not self._stop:
                 self.log.emit("INFO", "Đang gộp AllData.csv từ các CSV vừa tạo ...")
                 try:
-                    import normalize
-
                     out_all = self.out_dir / "AllData.csv"
                     rc = normalize.main(
                         [
@@ -741,8 +747,6 @@ def main() -> int:
             )
             out_dir.mkdir(parents=True, exist_ok=True)
             try:
-                import normalize
-
                 rc = normalize.main(
                     [
                         "--input",
@@ -782,6 +786,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
 
