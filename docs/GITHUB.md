@@ -49,7 +49,7 @@ git init
 git add .
 git commit -m "Initial commit: SoilData2AI - Excel/TCVN3 to CSV UTF-8 for AI"
 git branch -M main
-git remote add origin https://github.com/<your-username>/SoilData2AI.git
+git remote add origin https://github.com/longnhgsvn/SoilData2AI.git
 git push -u origin main
 ```
 
@@ -78,9 +78,11 @@ Lưu ý: repo không chứa dữ liệu thật. Dùng `examples/` để chạy t
 
 ## Checklist trước khi public
 
-- [ ] Thay `<your-username>` trong README/CITATION nếu cần.
+- [x] URL repo đã cập nhật: `https://github.com/longnhgsvn/SoilData2AI`.
 - [ ] Kiểm tra không có `dataXLSX/`, `dataCSV*`, `AllData.csv`, log hoặc file dữ liệu thật.
 - [ ] Chạy `python -m unittest discover -s tests -v`.
 - [ ] Chạy `python src/gui.py` và `python src/xlsx2csv.py --input examples --output examples/out`.
 - [ ] Kiểm tra LICENSE, CITATION.cff, README.
 - [ ] Tạo GitHub Release kèm EXE/PDF (không commit EXE vào repo).
+
+

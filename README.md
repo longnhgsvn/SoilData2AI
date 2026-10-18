@@ -45,7 +45,7 @@ Kèm **GUI Qt6** và **EXE Windows** để dùng không cần cài Python.
 ## Cài đặt
 
 ```bash
-git clone https://github.com/<your-username>/SoilData2AI.git
+git clone https://github.com/longnhgsvn/SoilData2AI.git
 cd SoilData2AI
 python -m pip install -r requirements.txt
 ```
@@ -236,3 +236,4 @@ MIT — xem [`LICENSE`](LICENSE).
 ## English summary
 
 SoilData2AI is a Python/Qt6 pipeline that batch-converts geotechnical soil-property spreadsheets (`.xls`, `.xlsx`) into UTF-8 CSV files for AI training. It detects legacy Vietnamese TCVN3 text via font metadata and character markers, converts it to Unicode with a two-phase replacement algorithm, skips empty worksheets, and preserves grid structure for traceability. The repository includes a CLI, a Qt6 desktop GUI, a PyInstaller build, tests, a 19-slide conference deck, and a 20-question rebuttal guide.
+
