@@ -50,6 +50,8 @@ cd SoilData2AI
 python -m pip install -r requirements.txt
 ```
 
+> Trên Windows, nếu `python` không có trong PATH, dùng `py -3` hoặc đường dẫn tuyệt đối, ví dụ `C:\Python312\python.exe`. Script build EXE đã dùng đường dẫn tuyệt đối nên không phụ thuộc PATH.
+
 Yêu cầu:
 
 - Python 3.10+ (đã test trên 3.12)
